@@ -29,7 +29,7 @@ def main():
     # ---------------------------
     embeddings = OpenAIEmbeddings(
         openai_api_key=perplexity_api_key,
-        openai_api_base="https://api.perplexity.ai"
+        openai_api_base="https://api.perplexity.ai"  # Hardcoded base URL
     )
 
     docs = [
@@ -167,9 +167,9 @@ def main():
     # Initialize the ChatOpenAI (Perplexity)
     # -----------------------------------
     llm = ChatOpenAI(
-        model="llama-3.1-sonar-small-128k-online",
+        model="llama-3.1-sonar-small-128k-online",  # Hardcoded model
         openai_api_key=perplexity_api_key,
-        openai_api_base="https://api.perplexity.ai",
+        openai_api_base="https://api.perplexity.ai",  # Hardcoded base URL
         temperature=0
     )
 
